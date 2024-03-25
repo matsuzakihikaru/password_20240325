@@ -42,7 +42,7 @@ function onClick(e) {
         screen++;
 
 		var now_time = new Date();
-        times.push(now_time.getTime()-n_time);
+        times.push(String(now_time.getTime()-n_time));
         n_time = now_time;
 
         if (screen%20 <= 11) {
@@ -205,7 +205,7 @@ function next() {
 		for (let i = 0; i < 5; i++) {
 			var str;
 			if (i == 0) {
-				str = "前髪で額が隠れている人";
+				str = "頭に被り物をしている人";
 			}
 			else{
 				str = data[rand[i-1]][0];
@@ -230,7 +230,7 @@ canvas.addEventListener('click', onClick, false);
 let imgsize = 128;
 
 //認証回答時間
-let times = [];
+let times = ["N"];
 let n_time;
 
 //実験開始時間
