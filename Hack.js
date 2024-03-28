@@ -19,7 +19,7 @@ class Hack {
         context.fillText((pass+1)+" / 5 セット ", 0, 128*3+32*4+48);
 
         if (pass==0) {
-        	context.fillText("条件は「頭に被り物をしている人」です。", 0, 128*3+32*4+72);
+        	context.fillText("条件は「前髪で額が隠れている人」です。", 0, 128*3+32*4+72);
         }
 
 		//画像描画
